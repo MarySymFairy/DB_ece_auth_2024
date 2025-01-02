@@ -616,6 +616,8 @@ module.exports.subjectsSubjectIDPUT = async function subjectsSubjectIDPUT(req, r
 // Synapses Functions
 module.exports.synapsesGET = async function synapsesGET(req, res, next) {
   try {
+    console.log('synapsesGET called');
+
     const [rows] = await db.query('SELECT * FROM synapses');
     utils.writeJson(res, rows);
   } catch (err) {

@@ -4,8 +4,8 @@ info:
   description: API for managing NeuroSync database entities and their relationships
   version: 1.0.0
 servers:
-- url: https://virtserver.swaggerhub.com/DTKYRIAK_1/NeuroSync/1.0.0
-  description: SwaggerHub API Auto Mocking
+  - url: http://localhost:8080
+    description: Local server
 paths:
   /stimuli:
     get:
@@ -861,13 +861,7 @@ components:
         description:
           type: string
         intensityOrDose:
-          type: float
-      example:
-        stimulusID: 0
-        intensityOrDose: 0
-        name: name
-        description: description
-        type: 0.0
+          type: number
     Subject:
       type: object
       properties:
@@ -879,11 +873,6 @@ components:
           type: integer
         gender:
           type: string
-      example:
-        gender: gender
-        species: species
-        subjectID: 0
-        age: 6
     Experiment:
       type: object
       properties:
@@ -897,12 +886,6 @@ components:
           type: string
         observation:
           type: string
-      example:
-        dateTime: dateTime
-        observation: observation
-        stimulusID: 1
-        experimentID: 0
-        subjectID: 6
     ExperimentResult:
       type: object
       properties:
@@ -913,12 +896,7 @@ components:
         resultDescription:
           type: string
         significanceScore:
-          type: float
-      example:
-        resultID: 0
-        experimentID: 6
-        resultDescription: resultDescription
-        significanceScore: 1.46581298050294517310021547018550336360931396484375
+          type: number
     BrainRegion:
       type: object
       properties:
@@ -930,11 +908,6 @@ components:
           type: string
         description:
           type: string
-      example:
-        regionID: 0
-        regionName: regionName
-        function: function
-        description: description
     Neuron:
       type: object
       properties:
@@ -945,12 +918,7 @@ components:
         type:
           type: string
         thresholdPotential:
-          type: float
-      example:
-        regionID: 6
-        thresholdPotential: thresholdPotential
-        neuronID: 0
-        type: type
+          type: number
     Neurotransmitter:
       type: object
       properties:
@@ -962,11 +930,6 @@ components:
           type: string
         description:
           type: string
-      example:
-        name: name
-        description: description
-        neurotransmitterID: 0
-        effectType: effectType
     Synapse:
       type: object
       properties:
@@ -977,12 +940,7 @@ components:
         postSynapticNeuronID:
           type: integer
         strength:
-          type: float
-      example:
-        preSynapticNeuronID: 6
-        strength: strength
-        postSynapticNeuronID: 1
-        synapseID: 0
+          type: number
     ActivatedNeuron:
       type: object
       properties:
@@ -993,15 +951,9 @@ components:
         experimentID:
           type: integer
         duration:
-          type: float
+          type: number
         activationStrength:
-          type: float
-      example:
-        duration: duration
-        neuronID: 6
-        experimentID: 1
-        activationStrength: activationStrength
-        activationID: 0
+          type: number
     EmittedNeurotransmitter:
       type: object
       properties:
@@ -1012,10 +964,4 @@ components:
         neurotransmitterID:
           type: integer
         concentration:
-          type: float
-      example:
-        concentration: concentration
-        neurotransmitterID: 1
-        emissionID: 0
-        activationID: 6
-        
+          type: number
