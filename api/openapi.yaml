@@ -861,13 +861,13 @@ components:
         description:
           type: string
         intensityOrDose:
-          type: string
+          type: float
       example:
         stimulusID: 0
-        intensityOrDose: intensityOrDose
+        intensityOrDose: 0
         name: name
         description: description
-        type: type
+        type: 0.0
     Subject:
       type: object
       properties:
@@ -913,7 +913,7 @@ components:
         resultDescription:
           type: string
         significanceScore:
-          type: number
+          type: float
       example:
         resultID: 0
         experimentID: 6
@@ -945,7 +945,7 @@ components:
         type:
           type: string
         thresholdPotential:
-          type: string
+          type: float
       example:
         regionID: 6
         thresholdPotential: thresholdPotential
@@ -977,7 +977,7 @@ components:
         postSynapticNeuronID:
           type: integer
         strength:
-          type: string
+          type: float
       example:
         preSynapticNeuronID: 6
         strength: strength
@@ -993,9 +993,9 @@ components:
         experimentID:
           type: integer
         duration:
-          type: string
+          type: float
         activationStrength:
-          type: string
+          type: float
       example:
         duration: duration
         neuronID: 6
@@ -1012,9 +1012,10 @@ components:
         neurotransmitterID:
           type: integer
         concentration:
-          type: string
+          type: float
       example:
         concentration: concentration
         neurotransmitterID: 1
         emissionID: 0
         activationID: 6
+        
