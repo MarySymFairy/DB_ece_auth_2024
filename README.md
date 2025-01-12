@@ -24,7 +24,8 @@ Open your terminal or command prompt and navigate to where you'd like to clone t
 
    ```bash
    git clone https://github.com/MarySymFairy/NeurosyncDB.git
-   cd NeurosyncDB```
+   cd NeurosyncDB
+   ```
 
 ### 2. Configure the DB
 The DB is used through MySQLWorkbench and it is an SQL database. Make sure to create an .env file containing your 
