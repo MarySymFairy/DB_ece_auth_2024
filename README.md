@@ -51,3 +51,20 @@ open http://localhost:8080/docs
 ```
 
 This project leverages the mega-awesome [swagger-tools](https://github.com/apigee-127/swagger-tools) middleware which does most all the work.
+
+## Accessing the API Interface
+
+You can explore and interact with the backend API directly through the SwaggerHub interface:
+1. **Explore Endpoints:** Within SwaggerHub, you can browse the available API endpoints, see the request parameters, and test the endpoints by sending requests directly from the interface.
+    * **Note:** Make sure that the database is running before you use your interface in order to obtain data.
+2. **View API Documentation:**
+SwaggerHub provides detailed documentation for each API endpoint, including descriptions of request parameters, expected responses, and error codes. Use this documentation to understand how to properly interact with the API.
+
+    * **GET -->** is used to retrieve data from the server.
+    * **PUT -->** is used to update existing data.
+    * **DELETE -->** is used to remove data from the database.
+    * **POST -->** is used to create elements
+3. **Test API Responses:**
+Use SwaggerHub’s built-in testing capabilities to validate the responses from each endpoint.
+
+    * **Check for proper status codes**, such as 200 OK, 201 Created, 400 Bad Request, or 500 Internal Server Error.
