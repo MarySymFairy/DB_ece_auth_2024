@@ -13,6 +13,8 @@ Before you begin, make sure you have the following installed:
 
 *   **Node.js and npm (or yarn):** You can download Node.js from [https://nodejs.org/](https://nodejs.org/). npm usually comes bundled with Node.js.
 *   **Git:** To clone the repository. If you don't have it, download it from [https://git-scm.com/](https://git-scm.com/).
+*   **Database configuration:**  The application is set up to be used with a database. If you plan to run your own database you should install:
+   *   *   **MySQL:** It will require you to install a MySQL server and client tools. You can download MySQL Community Edition from [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/).  You can use MySQL Workbench or another client.
 
 ## Execution Instructions
 
@@ -27,9 +29,12 @@ Open your terminal or command prompt and navigate to where you'd like to clone t
    cd NeurosyncDB
    ```
 
-### 2. Configure the DB
-The DB is used through MySQLWorkbench and it is an SQL database. Make sure to create an .env file containing your sensitive data, according to .env.example, to connect your DB to the project. I have also added a dump file of the DB we constructed for this project. (dbsql.sql)
-
+### 2. Database Configuration
+*   **Local Database:** To set up a local MySQL instance:
+        *   Ensure you have a MySQL server installed and running.
+        *   Create a database named `my_db` (change the name if you like). You can use MySQL Workbench or the `mysql` command-line client, or another database management tool.
+        *   **VERY IMPORTANT:** Make sure to create an .env file containing your sensitive data, according to .env.example, to connect your DB to the project.
+    Replace the placeholder values with your actual database credentials.  **Do not commit the .env file to your repository!** It contains sensitive information. Note that `DB_PORT` is typically `3306` for MySQL.  I have also added a dump file of the DB we constructed with the use of MySQLWorkbench. (dbsql.sql)
 
 ### 3. Running the server
 To run the server, run:
