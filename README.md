@@ -28,7 +28,8 @@ Open your terminal or command prompt and navigate to where you'd like to clone t
    ```
 
 ### 2. Configure the DB
-The DB is used through MySQLWorkbench and it is an SQL database. Make sure to create an .env file containing your sensitive data, according to .env.example, to connect your DB to the project. I have also added a dump file of the DB we constructed for this project. (dbsql)
+The DB is used through MySQLWorkbench and it is an SQL database. Make sure to create an .env file containing your sensitive data, according to .env.example, to connect your DB to the project. I have also added a dump file of the DB we constructed for this project. (dbsql.sql)
+
 
 ### 3. Running the server
 To run the server, run:
