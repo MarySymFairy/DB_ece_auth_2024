@@ -1,4 +1,4 @@
-<img height="300" width="400" alt="NeurosyncDB Logo" src="https://github.com/user-attachments/assets/a2200c3d-718d-4d4b-a53e-bed4ed3665a7" />
+<img height="300" width="400" alt="NeurosyncDB Logo" src="https://github.com/user-attachments/assets/3b2f1570-60a3-40ae-a5cf-6f557ea65228" />
 
 # Database-Project in ECE AUTH
 
